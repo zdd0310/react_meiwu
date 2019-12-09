@@ -1,11 +1,12 @@
-import "./assets/css/App.css"
+import "./App.css"
 import React,{Component} from "react"
-import Admin from "./page/admin"
+// import Admin from "./page/admin"
 import "antd/dist/antd.css"
+import Classify from "./page/classify/Classify"
 class App extends Component{
   render(){
     return (
-        <Admin />
+        <div>App</div>
     )
   }
 }
