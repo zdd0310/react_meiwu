@@ -5,13 +5,14 @@ import ReactDOM from "react-dom"
 import {BrowserRouter,Route,Switch,Redirect} from "react-router-dom"
 import App from "./App"
 import Index from "./page/index/index"
-
+import fengwei from "./page/fengwei"
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route path="/" component={App} exact/>
             <Route path="/index" component={Index}/>
+            <Route path="/fengwei" component={fengwei}/>
         </Switch>   
     </BrowserRouter>
     
