@@ -14,7 +14,7 @@ ReactDOM.render(
             <Route path="/" component={App} exact/>
             {
                 mainRoutes.map(item=>{
-                    return <Router path={item.path} component={item.component}/>
+                    return <Route path={item.path} component={item.component}/>
                 })
             }
         </Switch>   
