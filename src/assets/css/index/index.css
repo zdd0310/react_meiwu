@@ -13,6 +13,9 @@
 .ant-menu-item, .ant-menu-submenu-title{
     padding: 0 0.12rem;
 }
+.banner{
+    height: 2.07rem;
+}
 .ant-carousel .slick-slide {
     margin-top:0.05rem;
     height: 2.07rem;
