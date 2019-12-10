@@ -23,3 +23,12 @@
       height: 100%;
       width: 100%;
   }
+
+  .one .card .title{
+      width: 100%;
+      height: 0.8rem;
+  }
+  .one .card .title img{
+    width: 100%;
+    height: 100%;
+}
