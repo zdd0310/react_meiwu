@@ -1,7 +1,7 @@
-import Login from "./login"
-import FoundNot from "./foundnot"
+import Index from "./index/index"
+import Classify from "./classify/Classify"
 
 export {
-    Login,
-    FoundNot
+    Index,
+    Classify
 }

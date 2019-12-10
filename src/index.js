@@ -4,14 +4,19 @@ import React from "react";
 import ReactDOM from "react-dom"
 import {BrowserRouter,Route,Switch,Redirect} from "react-router-dom"
 import App from "./App"
-import Index from "./page/index/index"
+import {mainRoutes} from "./router/routes"
+import 'antd/dist/antd.css'
 
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route path="/" component={App} exact/>
-            <Route path="/index" component={Index}/>
+            {
+                mainRoutes.map(item=>{
+                    return <Router path={item.path} component={item.component}/>
+                })
+            }
         </Switch>   
     </BrowserRouter>
     
