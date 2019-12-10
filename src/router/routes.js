@@ -1,6 +1,7 @@
 import {
     Index,
-    Classify
+    Classify,
+    Fengwei
 } from "../page"
 
 
@@ -13,5 +14,9 @@ export const mainRoutes =[
     {
         path:"/classify",
         component:Classify
+    },
+    {
+        path:"/fengwei",
+        component:Fengwei
     }
 ]
