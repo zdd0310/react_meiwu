@@ -1,0 +1,55 @@
+.all{
+    background: #f9f9f9;
+}
+
+.ant-layout-header{
+    height:0.5rem;
+    width: 100%;
+    padding: 0;
+    position: relative;
+
+} 
+.search-box{
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height:0.4rem;
+    width:3.5rem;
+    line-height: 0.4rem;
+    background: white;
+    margin: auto;
+    border-radius: 0.19rem;
+    padding-left:0.15rem;  
+}
+.search-box span{
+    display:inline-block;
+    margin-left: 0.1rem;
+}
+.ant-layout-content{
+    margin: 0;
+    padding: 0;
+}
+.contentTop{
+    width: 100%;
+    height:2.5rem;
+    background: white;
+    padding-left: 0;
+    padding: 0.05rem 0.08rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contentTop li{
+    list-style: none;
+    width: 1.13rem;
+    height:1.19rem;
+    background: pink ;
+}
+
+
+
+
+
