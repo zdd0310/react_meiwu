@@ -1,0 +1,23 @@
+.footer{
+    height:.49rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-left:.43rem;
+    position:relative;
+    background:#fafafa;
+    border-top:.01rem solid #eee;
+}
+.footer a{
+    width:1.1rem;
+    text-align:center;
+    line-height:.49rem;
+    color:#4b4b4b;
+    border-left:.01rem solid #eee;
+}
+.footer p{
+    position:absolute;
+    width:.43rem;
+    left:0;
+    text-align:center;
+}
