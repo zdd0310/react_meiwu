@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Carousel,Card} from "antd"
+import {Carousel} from "antd"
 export default class One extends Component {
     render() {
         return (
@@ -19,10 +19,20 @@ export default class One extends Component {
                 </div>
                 <div className="card">
                     <div className="title"><img src="https://img.yzcdn.cn/upload_files/2019/07/12/FurK-TBE5q1A-NpoZyzECqTqV3i_.jpg!large.jpg"></img></div>
-                    <ul>
-                        <li></li>
-
-                    </ul>
+                    <div className="scrollX">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         )
