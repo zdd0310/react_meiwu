@@ -9,9 +9,12 @@
     flex:1;
     overflow:scroll;
 }
-.ant-carousel .slick-slide {
-    text-align: center;
+.content .ant-carousel .slick-list {
     height: 3.75rem;
+}
+.content .ant-carousel .slick-slide {
+    text-align: center;
+    height: 3.75rem !important;
     background: #364d79;
     overflow: hidden;
 } 
