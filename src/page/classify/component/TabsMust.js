@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {getMustList} from "../reducer/reducer"
+import {getMustList} from "../reducer/mustreducer"
 import {connect} from "react-redux"
 class TabsMust extends Component {
     componentDidMount(){
