@@ -45,8 +45,13 @@ class detail extends Component {
                         </div>
                     </div>
                     <div className="meiwu">
-                        
+                        <img src="https://img.yzcdn.cn/upload_files/2018/05/10/FqR0_CoPQ77auRMhAkXvCmPfAw0O.jpg"/>
+                        <p><span>美物Store</span>
+                        <img src="https://b.yzcdn.cn/public_files/612c211e81684a31abe374f5bf0ea6c4.png"></img></p>
+                        <a>关注店铺</a>
+                        <a>进店逛逛</a>
                     </div>
+                    <h4>价格说明</h4>
                     </div>
                 <Jiao />
                 </div>

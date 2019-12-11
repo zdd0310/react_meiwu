@@ -133,6 +133,51 @@
 .content .bag .meiwu{
     padding:.16rem;
     height:.8rem;
+    background:white;
+    margin-top:.08rem;
+    display:flex;
+    justify-content:space-between;
+}
+.content .bag .meiwu img{
+    width:.48rem;
+    height:.48rem;
+}
+.content .bag .meiwu p{
+    width:1.42rem;
+    margin:0;
+}
+.content .bag .meiwu p span{
+    font-size:.16rem;
+    color:#323233;
+    /* line-height:.48rem; */
+}
+.content .bag .meiwu p img{
+    width:.68rem;
+    height:.16rem;
+    margin-top:.06rem;
+}
+.content .bag .meiwu a{
+    padding:0 .08rem;
+    border:.01rem solid #c8c9cc;
+    border-radius:.1rem;
+    width:.66rem;
+    height:.24rem;
+    line-height:.24rem;
+    font-size:.12rem;
+}
+.content .bag .meiwu a:nth-of-type(2){
+    color:#f44;
+    border:.01rem solid #f44;
+    margin-left:.08rem;
+}
+.content .bag h4{
+    margin-top:.06rem;
+    margin-bottom:0;
+    line-height:.4rem;
+    background:white;
+    padding:0 .16rem;
+    text-align:center;
+    color:#323233;
 }
 /* ------------------------ */
 .footer{

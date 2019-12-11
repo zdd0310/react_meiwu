@@ -1,10 +1,17 @@
 import React,{Component} from "react"
+import {connect} from "react-redux"
 import "../../assets/css/fengwei/fengwei.css"
 import Footer from "../public/footer"
 import Jiao from "./component/jiao"
 import {Icon} from "antd"
+import {getfengweiList} from "./reducer/reducer"
 class fengwei extends Component{
+    componentDidMount(){
+        this.props.getfengweiList()
+    }
     render(){
+        const {state}=this.props
+        console.log(state)
         return(
             <div className="fengwei">
                 <div className="header">
@@ -31,6 +38,11 @@ class fengwei extends Component{
 
     }
 }
-export default fengwei
+const mapStateProps=(state)=>{
+    return {
+        state:state.FengweiReducer
+    }
+}
+export default connect(mapStateProps,{getfengweiList})(fengwei)
 
 
