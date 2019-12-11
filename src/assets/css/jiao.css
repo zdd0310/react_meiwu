@@ -1,0 +1,30 @@
+.jiao{
+    background:#f8f8f8;
+}
+.jiao .links{
+    padding:.3rem .15rem .1rem;
+    text-align:center;
+}
+ .jiao .links a{
+    padding:0 .06rem;
+    color:#666;
+    font-size:.12rem;
+    width:.64rem;
+    display:inline-block;
+    border-right:.01rem solid #eee;
+}
+.jiao .links a:nth-of-type(4){
+    border-right:none;
+}
+.jiao .youzan{
+    height:.9rem;
+    margin:0 .15rem;
+    background:url("https://img.yzcdn.cn/public_files/2018/12/19/5941d128d3d3e8a4748c7c9b95bea409.png")no-repeat center .17rem;
+    background-size:30%;
+}
+.jiao .youzan p{
+    padding:.5rem 0 .24rem;
+    text-align:center;
+    color:#999;
+    font-size:.12rem;
+}
