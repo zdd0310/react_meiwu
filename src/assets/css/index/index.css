@@ -55,11 +55,16 @@
     height: 100%;
     width: 1.07rem;
     padding: 0.05rem;
-    box-sizing: border-box;
     background: cadetblue;
     /* flex-shrink: 0; */
     flex: 1;
 
+}
+
+.one .new .scrollX ul li dt{
+    width: 100%;
+    height: 0.97rem;
+    
 }
 
 .one .tuijian{
@@ -106,7 +111,59 @@
 }
 .one .hot ul li{
     width: 1.77rem;
-    height: 2.68rem;
-    background: pink;
+    height: 2.67rem;
+    padding: 0.05rem;
     float: left;
+}
+.one .hot ul li dt{
+    width: 100%;
+    height: 1.67rem; 
+}
+.one .hot ul li dt img{
+    width: 100%;
+    height: 100%;
+}
+.one .hot ul li dd{
+    width: 1.67rem;
+    height: 0.8rem;
+    padding: 0 0.1rem;
+}
+.one .hot ul li dd>p{
+    margin: 0;
+    margin-top:0.1rem;
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 0.14rem;
+    color: #333;
+}
+
+.one .hot ul li dd div{
+    width: 100%;
+    height: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:16px;
+    color: rgb(255, 68, 68);
+}
+.one .hot ul li dd div p{
+    margin: 0;
+}
+.one .hot ul li dd div p span{
+    font-size: 0.12rem;
+}
+.one .hot ul li dd div .anticon-shopping-cart{
+    width: 0.2rem;
+    height: 0.2rem;
+    border: 0.01rem solid rgb(255, 68, 68);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
