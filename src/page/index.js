@@ -11,6 +11,9 @@ import Home from "./index/component/home"
 import Out from "./index/component/out"
 import Direction from "./index/component/direction"
 
+
+import Detail from "./fengwei/component/detail"
+
 export {
     Index,
     Classify,
@@ -21,5 +24,6 @@ export {
     Children,
     Home,
     Out,
-    Direction
+    Direction,
+    Detail
 }

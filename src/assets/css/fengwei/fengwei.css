@@ -24,4 +24,52 @@
 .content{
     flex:1;
     overflow:scroll;
+    background:#f8f8f8;
+}
+.content ul{
+    padding:0 .1rem;
+   
+}
+.content ul li{
+    display:flex;
+    justify-content:space-between;
+    background:white;
+    margin:.05rem;
+}
+.content ul li img{
+    width:1.45rem;
+    height:1.45rem;
+    margin:.05rem 0;
+}
+.content ul li .right{
+    width:1.9rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.content ul li .right h3{
+    margin-top:.1rem;
+    color:#333;
+    font-weight:bold;
+}
+.content ul li .right .cart{
+    height:.44rem;
+    color:#FF4444;
+    font-size:.16rem;
+}
+.content ul li .right .cart p{
+    display:inline-block;
+    line-height:.44rem;
+    margin-bottom:0;
+    width:1.6rem;
+    font-weight:bold;
+}
+.content ul li .right .cart p span{
+    font-size:.12rem;
+    font-weight:normal;
+}
+.content ul li .right .cart a{
+    border:.01rem solid #FF4444;
+    border-radius:50%;
+    color:#FF4444;
 }

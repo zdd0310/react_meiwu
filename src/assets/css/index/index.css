@@ -13,13 +13,100 @@
 .ant-menu-item, .ant-menu-submenu-title{
     padding: 0 0.12rem;
 }
-.ant-carousel .slick-slide {
+.banner{
+    height: 2.07rem;
+}
+.banner .ant-carousel .slick-slide {
     margin-top:0.05rem;
     height: 2.07rem;
     line-height: 2.07rem;
     overflow: hidden;
   }
-  .ant-carousel .slick-slide img{
+  .banner .ant-carousel .slick-slide img{
       height: 100%;
       width: 100%;
   }
+  .one .new{
+      height: auto;
+  }
+  .one .new .title{
+      width: 100%;
+      height: 0.8rem;
+  }
+  .one .new .title img{
+    width: 100%;
+    height: 100%;
+}
+.one .new .scrollX{
+    width: 100%;
+    height: 1.97rem;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
+
+}
+.one .new .scrollX ul{
+    height: 100%; 
+    padding: 0 0.1rem;
+    display: flex;
+    margin: 0;
+    width: 10.73rem;
+}
+.one .new .scrollX ul li{
+    height: 100%;
+    width: 1.07rem;
+    padding: 0.05rem;
+    box-sizing: border-box;
+    background: cadetblue;
+    /* flex-shrink: 0; */
+    flex: 1;
+
+}
+
+.one .tuijian{
+    height: auto;
+}
+.one .tuijian .title{
+    width: 100%;
+    height: 0.8rem;
+}
+.one .tuijian .title img{
+  width: 100%;
+  height: 100%;
+}
+.one .tuijian .ant-carousel{
+    height: 1.93rem;
+    width: 100%;
+}
+.one .tuijian .ant-carousel .slick-slide {
+    height: 1.93rem;
+    line-height: 1.93rem;
+    overflow: hidden;
+  }
+.one .tuijian .ant-carousel .slick-slide img{
+    height: 100%;
+    width: 100%;
+}
+.one .hot{
+    height: auto;
+}
+.one .hot .title{
+    width: 100%;
+    height: 0.8rem;
+}
+.one .hot .title img{
+  width: 100%;
+  height: 100%;
+}
+
+.one .hot ul{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    padding: 0 0.1rem;
+}
+.one .hot ul li{
+    width: 1.77rem;
+    height: 2.68rem;
+    background: pink;
+    float: left;
+}

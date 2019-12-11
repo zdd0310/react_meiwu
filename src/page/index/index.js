@@ -13,7 +13,7 @@ export default class Index extends Component {
     };
     shuaxin(){
         const reg=/^\/index\/(.{1,})$/g;
-        const key =reg.exec(this.props.location.pathname)[1]
+        const key =reg.exec(this.props.location.pathname)
         this.setState({
             current: key,
         });
