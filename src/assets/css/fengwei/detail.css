@@ -11,14 +11,127 @@
 }
 .ant-carousel .slick-slide {
     text-align: center;
-    height: 160px;
-    line-height: 160px;
+    height: 3.75rem;
     background: #364d79;
     overflow: hidden;
 } 
 .ant-carousel .slick-slide h3 {
     color: #fff;
+    height:3.75rem;
+    margin:0;
 }
+.ant-carousel .slick-slide h3 img{
+    width:3.7533rem;
+    height:3.75rem;
+}
+.content .intro{
+    padding:.08rem .16rem .1rem;
+    height:1.16rem;
+}
+.content .intro p{
+    margin:.02rem 0 .08rem;
+    height:.24rem;
+    font-size:.22rem;
+    color:#ff4444;
+}
+.content .intro p span{
+    font-size:.16rem;
+}
+.content .intro h6{
+    font-size:.12rem;
+    color:#969799;
+    margin:0;
+    height:.16rem;
+}
+.content .intro h6 span{
+    text-decoration:line-through;
+    margin-left:.04rem;
+}
+.content .intro h2{
+    margin:0;
+    font-size:.16rem;
+    color:#323233;
+}
+.content .green{
+    height:.4rem;
+    background:#07c160;
+    display:flex;
+    align-items:center;
+}
+.content .green img{
+    width:.78rem;
+    height:.18rem;
+    margin-left:.16rem;
+}
+.content .green span{
+    color:white;
+    padding-left:.12rem;
+    font-size:.12rem;
+    opacity:.8;
+}
+.content .bag{
+    background:#eee;
+}
+.content .bag .yunfei{
+    margin-top:.08rem;
+    height:.45rem;
+    background:white;
+    font-size:.13rem;
+    color:#969799;
+    padding:.13rem .16rem;
+}
+.content .bag .yunfei span:nth-of-type(1){
+    margin-right:.12rem;
+}
+.content .bag .yunfei span:nth-of-type(2){
+    color:#323233;
+}
+.content .bag .yunfei span:nth-of-type(3){
+    float:right;
+}
+.content .bag .kouwei{
+    background:white;
+    margin-top:.08rem;
+}
+.content .bag .kouwei p{
+    padding:.1rem .16rem;
+    display:flex;
+    justify-content:space-between;
+    margin:0;
+    color:#969799;
+    font-size:.13rem;
+}
+.content .bag .kouwei p span:nth-of-type(2){
+    width:2.84rem;
+    color:#323233;
+}
+.content .bag .kouwei .choose{
+    padding:.13rem .16rem;
+}
+.content .bag .kouwei .choose p{
+    padding:0;
+}
+.content .bag .kouwei .choose p:nth-of-type(2){
+    margin-top:.13rem;
+    display:block;
+}
+.content .bag .kouwei .choose p:nth-of-type(2) img:nth-of-type(1){
+    margin-left:.3rem;
+}
+.content .bag .kouwei .choose p:nth-of-type(2) img{
+    width:.32rem;
+    height:.32rem;
+    margin-right:.05rem;
+    display:inline-block;
+}
+.content .bag .kouwei .choose p:nth-of-type(2) span{
+    padding:0 .08rem;
+}
+.content .bag .meiwu{
+    padding:.16rem;
+    height:.8rem;
+}
+/* ------------------------ */
 .footer{
     height:.5rem;
     padding:0;
