@@ -7,6 +7,7 @@ import store from "./store/store"
 import {BrowserRouter,Route,Switch,Redirect} from "react-router-dom"
 import App from "./App"
 import Classify from "./page/classify/Classify"
+
 import {mainRoutes} from "./router/routes"
 import 'antd/dist/antd.css'
 

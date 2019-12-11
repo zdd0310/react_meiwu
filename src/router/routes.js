@@ -8,7 +8,9 @@ import {
     Children,
     Home,
     Out,
-    Direction
+    Direction,
+    Detail,
+    Sport
 
 
 
@@ -28,6 +30,14 @@ export const mainRoutes =[
     {
         path:"/fengwei",
         component:Fengwei
+    },
+    {
+        path:"/detail",
+        component:Detail
+    },
+    {
+        path:"/sport",
+        component:Sport
     }
 ]
 
