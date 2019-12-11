@@ -16,3 +16,15 @@ export const getList=()=>{
         }
       })
 }
+
+export const getClassifyMustList=()=>{
+  return axios("/goods-api/goodsByTagAlias.json",{
+    params:{
+      pageSize: 10,
+      page: 1,
+      alias: "yzdq8psb",
+      offlineId: 0,
+      json: 1,
+    }
+  })
+}

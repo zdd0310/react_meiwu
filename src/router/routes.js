@@ -9,7 +9,8 @@ import {
     Home,
     Out,
     Direction,
-    Detail
+    Detail,
+    Sport
 
 
 
@@ -33,6 +34,10 @@ export const mainRoutes =[
     {
         path:"/detail",
         component:Detail
+    },
+    {
+        path:"/sport",
+        component:Sport
     }
 ]
 

@@ -1,7 +1,7 @@
 import Index from "./index/index"
 import Classify from "./classify/Classify"
 import Fengwei from "./fengwei/index"
-
+import Sport from "./sport/Sport"
 
 import One from "./index/component/one"
 import Eat from "./index/component/eat"
@@ -25,5 +25,6 @@ export {
     Home,
     Out,
     Direction,
-    Detail
+    Detail,
+    Sport
 }

@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
-
-export default class TabsMust extends Component {
+import {getMustList} from "../reducer/reducer"
+import {connect} from "react-redux"
+class TabsMust extends Component {
+    componentDidMount(){
+        this.props.getMustList()
+    }
     render() {
+        const {state}=this.props
+        console.log(state)
         return (
             <ul className="TabsMust">
                 <li className="goods" id="fumargintop">
@@ -68,3 +74,10 @@ export default class TabsMust extends Component {
         )
     }
 }
+
+const mapStateProps=(state)=>{
+    return {
+        state
+    }
+}
+export default connect(mapStateProps,{getMustList})(TabsMust)
