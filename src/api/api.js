@@ -56,3 +56,19 @@ export const getClassifyNewList=()=>{
   })
 } 
 
+export const getSportList=()=>{
+  return axios("/showcase/goodsList.json",{
+    parmas:{
+      tagId: 108071946,
+      page: 1,
+      pageSize: 8,
+      goodsIds: "",
+      goodsFrom: 1,
+      isAdv: 0,
+      offlineId: 0,
+      goodsNumber: 8,
+      json: 1,
+      kdt_id:17879790 
+    }
+  })
+}
