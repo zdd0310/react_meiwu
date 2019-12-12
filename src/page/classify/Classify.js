@@ -1,5 +1,5 @@
 import React ,{Component} from "react"
-import "./assets/classify.css"
+import "../../assets/css/classify/classify.css"
 import ClassifyHeader from "./component/Header"
 import ContentTop from "./component/ContentTop"
 import ContentTabs from "./component/ContentTabs"
