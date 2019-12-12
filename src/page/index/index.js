@@ -29,7 +29,7 @@ export default class Index extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="index">
                 <div className="search">
                     <Icon type="search" />
                     <span>搜索商品</span>
@@ -59,7 +59,7 @@ export default class Index extends Component {
                         </Menu.Item>
                     </Menu>
                 </div>
-                <div className="content">
+                <div className="indexContent">
                     <Switch>
                         {
                             indexRoutes.map(item=>{

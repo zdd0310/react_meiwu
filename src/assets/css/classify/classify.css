@@ -113,9 +113,7 @@
     min-height: 5rem;
     background: #f9f9f9;
 }
-#fumargintop{
-    margin-top:-0.1rem ;
-}
+
 .goods{
     width:3.55rem;
     height:1.45rem;
@@ -131,6 +129,7 @@
 }
 .txt{
     margin-top:0.1rem ;
+    position: relative;
 }
 .title{
     width:1.9rem;
@@ -152,15 +151,21 @@
     color: #999;
     font-size: 0.12rem;
     margin-top: 0.05rem;
+    text-overflow: ellipsis;
+    width: 1.8rem;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .info{
     width: 1.9rem;
     height:0.44rem;
     line-height: 0.44rem;
-    margin-top:0.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:absolute;
+    right:0;
+    bottom: 0;
 }
 .info>.price{
     color:red;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./assets/sport.css"
+import "../../assets/css/sport/sport.css"
 import SportCarousel from "./compontent/SportCarousel"
 import SportList from "./compontent/SportList"
 

@@ -12,7 +12,7 @@ export const getList=()=>{
           offlineId: 0,
           goodsNumber: 8,
           json: 1,
-          kdt_id:17879790
+          kdt_id:17879790 
         }
       })
 }
@@ -25,6 +25,7 @@ export const getClassifyMustList=()=>{
       alias: "yzdq8psb",
       offlineId: 0,
       json: 1,
+      kdt_id:17879790
     }
   })
 }
@@ -41,3 +42,17 @@ export const getFengweiList=(alias)=>{
     }
   })
 }
+
+export const getClassifyNewList=()=>{
+  return axios("/goods-api/goodsByTagAlias.json",{
+    params:{
+      pageSize: 10,
+      page: 1,
+      alias: "gox93q9x",
+      offlineId: 0,
+      json: 1,
+      kdt_id:17879790
+    }
+  })
+} 
+
