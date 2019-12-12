@@ -1,0 +1,52 @@
+.cart .bangding{
+    height:.38rem;
+    margin:0 0 .1rem;
+    padding:0 .1rem;
+    display:flex;
+    align-items:center;
+    font-size:.12rem;
+}
+.cart .bangding svg{
+    font-size:.16rem;
+    color:#999;
+    margin-right:.06rem;
+}
+.cart .bangding span:nth-of-type(1){
+    color:#333;
+    width:2.7rem;
+}
+.cart .bangding span:nth-of-type(2){
+    width:.6rem;
+    height:.26rem;
+    padding:.03rem .05rem;
+    color:#f60;
+    border:.01rem solid #f60;
+    border-radius:.03rem;
+}
+.cart .sto{
+    background:#eee;
+}
+.cart .sto .tit{
+    margin:0 0 .12rem;
+    padding:0 0 0 .12rem;
+    height:.48rem;
+    width:100%;
+    color:#333;
+    line-height:.48rem;
+    background:white;
+}
+.cart .sto .tit i svg{
+    font-size:.22rem;
+    color:#323233;
+}
+.cart .sto .tit span:nth-of-type(1){
+    width:2.83rem;
+    margin-left:.1rem;
+    display:inline-block;
+}
+.cart .sto .gouwu{
+    margin:0 .12rem .12rem;
+    height:1.2rem;
+    background:white;
+    padding:.12rem .12rem .12rem 0;
+}
