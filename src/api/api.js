@@ -30,12 +30,12 @@ export const getClassifyMustList=()=>{
   })
 }
 
-export const getFengweiList=()=>{
+export const getFengweiList=(alias)=>{
   return axios("/goods-api/goodsByTagAlias.json",{
     params:{
       pageSize: 10,
       page: 1,
-      alias: "w43bj5jm",
+      alias: alias,
       offlineId: 0,
       json: 1,
       kdt_id:17879790

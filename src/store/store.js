@@ -1,4 +1,4 @@
-
+// 合并reducer，创建store
 import {createStore,combineReducers,applyMiddleware} from "redux"
 import thunk from "redux-thunk"
 import IndexReducer from "../page/index/reducer/reducer"
