@@ -10,7 +10,8 @@ import {
     Out,
     Direction,
     Detail,
-    Sport
+    Sport,
+    Cart
 
 
 
@@ -38,6 +39,10 @@ export const mainRoutes =[
     {
         path:"/sport",
         component:Sport
+    },
+    {
+        path:"/cart",
+        component:Cart
     }
 ]
 

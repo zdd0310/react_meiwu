@@ -13,6 +13,7 @@ import Direction from "./index/component/direction"
 
 
 import Detail from "./fengwei/component/detail"
+import Cart from "./fengwei/cart"
 
 export {
     Index,
@@ -26,5 +27,6 @@ export {
     Out,
     Direction,
     Detail,
-    Sport
+    Sport,
+    Cart
 }
