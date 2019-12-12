@@ -25,6 +25,7 @@ export const getClassifyMustList=()=>{
       alias: "yzdq8psb",
       offlineId: 0,
       json: 1,
+      kdt_id:17879790
     }
   })
 }

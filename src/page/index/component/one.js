@@ -17,12 +17,6 @@ class One extends Component {
         console.log(state)
         return (
             <div className="one">
-                {
-                    state.IndexReducer.listData.map(item=>{
-                        return <p key={item.title}>{item.title}</p>
-                    })
-                }
-               
                 <div className="banner">
                     <Carousel autoplay>
                         <div>
@@ -102,7 +96,7 @@ class One extends Component {
 
 const mapStateProps=(state)=>{
     return {
-        state
+        state:state.IndexReducer
     }
 }
 export default connect(mapStateProps,{getIndexList})(One)
