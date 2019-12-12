@@ -11,6 +11,7 @@ class TabsMust extends Component {
         return (
             <ul className="TabsMust">
                 {
+                    
                     state.listData.map(item=>{
                         return (
                             <li className="goods" key={item.id}>
