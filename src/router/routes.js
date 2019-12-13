@@ -11,7 +11,8 @@ import {
     Direction,
     Detail,
     Sport,
-    Cart
+    Cart,
+    ShopcarBlank
 
 
 
@@ -43,6 +44,10 @@ export const mainRoutes =[
     {
         path:"/cart",
         component:Cart
+    },
+    {
+        path:"/shopcarblank",
+        component:ShopcarBlank
     }
 ]
 

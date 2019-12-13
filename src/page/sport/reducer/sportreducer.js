@@ -22,8 +22,8 @@ const setsportlistData=(data)=>{
 export const getSportDataList=()=>{
     return (dispatch)=>{
         getSportList().then(res=>{
-            console.log(res)
-            // dispatch(setsportlistData(res.data.data.list))
+            console.log(res.data.data.list)
+            dispatch(setsportlistData(res.data.data.list))
         })   
     }
 }

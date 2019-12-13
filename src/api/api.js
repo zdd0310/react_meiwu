@@ -58,15 +58,15 @@ export const getClassifyNewList=()=>{
 
 export const getSportList=()=>{
   return axios("/showcase/goodsList.json",{
-    parmas:{
-      tagId: 108071946,
+    params : {
+      tagId: 108072009,
       page: 1,
-      pageSize: 8,
+      pageSize: 10,
       goodsIds: "",
       goodsFrom: 1,
       isAdv: 0,
       offlineId: 0,
-      goodsNumber: 8,
+      goodsNumber: 50,
       json: 1,
       kdt_id:17879790 
     }
