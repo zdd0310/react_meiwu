@@ -7,31 +7,42 @@ import {Icon} from "antd"
 import {getfengweiList} from "./reducer/reducer"
 class fengwei extends Component{
     componentDidMount(){
-        this.props.getfengweiList()
+        this.props.getfengweiList("9rs2lr3f")
+    }
+    jump=(item)=>{
+        this.props.history.push("/detail",item)
     }
     render(){
-        const {state}=this.props
-        console.log(state)
+        const {state,getfengweiList}=this.props
+        // console.log(state.listData)
         return(
             <div className="fengwei">
                 <div className="header">
-                    <a>地方风味</a>
-                    <a>水果</a>
-                    <a>甜品</a>
-                    <a>酒类</a>
+                    <a onClick={getfengweiList.bind(this,"9rs2lr3f")}>地方风味</a>
+                    <a onClick={getfengweiList.bind(this,"pj1ublt6")}>水果</a>
+                    <a onClick={getfengweiList.bind(this,"nyfltj111")}>甜品</a>
+                    <a onClick={getfengweiList.bind(this,"w43bj5jm")}>酒类</a>
                 </div>
                 <div className="content">
                     <ul>
-                        <li>
-                            <img src="https://img.yzcdn.cn/upload_files/2019/11/26/FrFr51VDfwscm7XF_phUh2pU22jP.jpg!middle.jpg"/>
-                            <div className="right">
-                                <h3>潮汕手锤牛肉丸</h3>
-                                <div className="cart"><p><span>￥</span>54</p><a><Icon type="shopping-cart" /></a></div>
-                            </div>
-                        </li>
+                        {
+                            state.listData.map(item=>{
+                                return(
+                                    <li key={item.id} onClick={this.jump.bind(this,{
+                                        item:item
+                                    })}>
+                                    <img src={item.imageUrl}/>
+                                    <div className="right">
+                                        <h3>{item.title}</h3>
+                                        <div className="cart"><p><span>￥</span>{item.price}</p><a><Icon type="shopping-cart" /></a></div>
+                                    </div>
+                                </li>
+                                )
+                            })
+                        } 
                     </ul>
-                    </div>
-                   <Jiao/>
+                    <Jiao/>
+                    </div> 
                 <Footer/>
             </div>
         )

@@ -47,12 +47,12 @@ export const getClassifyMustList=()=>{
   })
 }
 
-export const getFengweiList=()=>{
+export const getFengweiList=(alias)=>{
   return axios("/goods-api/goodsByTagAlias.json",{
     params:{
       pageSize: 10,
       page: 1,
-      alias: "w43bj5jm",
+      alias: alias,
       offlineId: 0,
       json: 1,
       kdt_id:17879790
@@ -73,3 +73,19 @@ export const getClassifyNewList=()=>{
   })
 } 
 
+export const getSportList=()=>{
+  return axios("/showcase/goodsList.json",{
+    params : {
+      tagId: 108072009,
+      page: 1,
+      pageSize: 10,
+      goodsIds: "",
+      goodsFrom: 1,
+      isAdv: 0,
+      offlineId: 0,
+      goodsNumber: 50,
+      json: 1,
+      kdt_id:17879790 
+    }
+  })
+}

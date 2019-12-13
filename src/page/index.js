@@ -2,6 +2,7 @@ import Index from "./index/index"
 import Classify from "./classify/Classify"
 import Fengwei from "./fengwei/index"
 import Sport from "./sport/Sport"
+import ShopcarBlank from "./shopcarblank/ShopcarBlank"
 
 import One from "./index/component/one"
 import Eat from "./index/component/eat"
@@ -28,5 +29,6 @@ export {
     Direction,
     Detail,
     Sport,
-    Cart
+    Cart,
+    ShopcarBlank
 }

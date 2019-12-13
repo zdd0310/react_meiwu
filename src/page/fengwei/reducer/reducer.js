@@ -1,8 +1,7 @@
 import {getFengweiList} from "../../../api/api"
 const GET_FENGWEI_LIST="GET_FENGWEI_LIST"
 const fengweiState={
-    listData:[],
-    
+    listData:[] 
 }
 export default (state=fengweiState,action)=>{
     const newState=JSON.parse(JSON.stringify(state))
@@ -20,10 +19,10 @@ const setlistData=(data)=>{
         data
     }
 }
-export const getfengweiList=()=>{
+export const getfengweiList=(alias)=>{
     return (dispatch)=>{
-        getFengweiList().then(res=>{
-            console.log(res.data.data.list)
+        getFengweiList(alias).then(res=>{
+            // console.log(res.data.data.list)
             dispatch(setlistData(res.data.data.list))
         })   
     }

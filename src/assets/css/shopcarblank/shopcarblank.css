@@ -1,0 +1,100 @@
+.blank{
+    width: 100%;
+    height: 100%;
+    background:#f9f9f9;
+}
+/* 购物车中没有添加物品时的空白页 */
+.blank-top{
+    width: 3.75rem;
+    height:3.32rem;
+    padding:0.32rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blankpic{
+    display:block;
+    width:1.5rem;
+    height: 1.5rem;
+}
+.blank-top h2{
+    width:100%;
+    text-align: center;
+    color:#323233;
+    margin: 0.24rem 0 0.08rem;
+}
+.blank-desc{
+    width:100%;
+    text-align: center;
+    color:#969799;
+}
+.hang{
+    margin-top:0.12rem;
+    width: 0.72rem;
+    height:0.32rem;
+    line-height: 0.32rem;
+    border: 0.01rem solid #ff4444;
+    color:#ff4444;
+    text-align: center;
+    border-radius: 0.16rem;
+}
+
+
+/* 更多商品 */
+.blankList{
+    width: 3.75rem;
+    padding: 0 0.15rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: wrap;
+  
+}
+  
+.blankList >.blank-detail{
+    width:1.775rem ;
+    height: 2.675rem;
+    background: white;
+    margin-bottom: 0.1rem;
+    position: relative;
+}
+.blankpic{
+    display: block;
+    width: 1.775rem;
+    height: 1.775rem;
+}
+.describe{
+    padding: 0 0.1rem;
+}
+.blank-title{
+    margin-top: 0.1rem;
+    width:1.475rem;
+    height:0.4rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 0.14rem;
+    color:#333;
+    font-weight:bold;
+}
+.blank-info{
+    width: 1.475rem;
+    height: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+.blank-price{
+    font-size: 0.16rem;
+    color: #ff4444;
+    font-weight: bold;
+}
+.blank-buy{
+    padding-top: 0.02rem;
+    font-size: 0.2rem;
+    color:#ff4444;
+}
