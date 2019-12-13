@@ -12,7 +12,7 @@
 .swiper .slick-track{
     height:1.75rem;
 }
-.swiper .ant-carousel .slick-slide ,.slick-list{
+.swiper .ant-carousel .slick-slide ,.swiper .slick-list{
     margin-top:0 !important;
     text-align: center;
     height: 1.75rem;

@@ -1,53 +1,20 @@
 import axios from "./axios"
 
 export const getList=()=>{
-    return axios("/showcase/goodsList.json?goodsIds=508363198%2C542140256%2C505785309%2C538603472%2C538606117%2C503967646%2C493691129%2C527323701%2C492164967%2C491976337",{
+    return axios("/showcase/goodsList.json",{
         params : {
           tagId: 108071946,
-          tagId: "",
           page: 1,
-          pageSize: 6,
-          goodsFrom: 0,
+          pageSize: 8,
+          goodsIds: "",
+          goodsFrom: 1,
           isAdv: 0,
           offlineId: 0,
-          goodsNumber: 6,
+          goodsNumber: 8,
           json: 1,
           kdt_id:17879790 
         }
       })
-}
-
-export const getPeishiList=()=>{
-  return axios("/showcase/goodsList.json?goodsIds=488832511%2C426862811%2C426864459%2C316900772%2C427327270%2C488848008",{
-      params : {
-        tagId: "",
-        page: 1,
-        pageSize: 6,
-        goodsFrom: 0,
-        isAdv: 0,
-        offlineId: 0,
-        goodsNumber: 6,
-        json: 1,
-        kdt_id:17879790 
-      }
-    })
-}
-
-export const getHotList=(tagId,pageSize,goodsNumber)=>{
-  return axios("/showcase/goodsList.json",{
-      params : {
-        tagId,
-        page: 1,
-        pageSize,
-        goodsIds:"", 
-        goodsFrom: 1,
-        isAdv: 0,
-        offlineId: 0,
-        goodsNumber,
-        json: 1,
-        kdt_id:17879790 
-      }
-    })
 }
 
 export const getClassifyMustList=()=>{
@@ -89,27 +56,6 @@ export const getClassifyNewList=()=>{
   })
 } 
 
-
-
-export const getBlankMoretList=()=>{
-  return axios("/goods-api/goodsByTagAlias.json",{
-    params : {
-      pageSize: 20,
-      page: 1,
-      offlineId: 0,
-      order: "",
-      json: 1,
-      alias: "jptgo4o71",
-      kdt_id:17879790 
-    }
-  })
-}
-
-
-
-
-
-
 export const getSportList=(tagId)=>{
   return axios("/showcase/goodsList.json",{
     params : {
@@ -128,3 +74,16 @@ export const getSportList=(tagId)=>{
 }
 
 
+export const getBlankMoretList=()=>{
+  return axios("/goods-api/goodsByTagAlias.json",{
+    params : {
+      pageSize: 20,
+      page: 1,
+      offlineId: 0,
+      order: "",
+      json: 1,
+      alias: "jptgo4o71",
+      kdt_id:17879790 
+    }
+  })
+}
