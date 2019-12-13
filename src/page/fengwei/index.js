@@ -9,9 +9,12 @@ class fengwei extends Component{
     componentDidMount(){
         this.props.getfengweiList("9rs2lr3f")
     }
+    jump=(item)=>{
+        this.props.history.push("/detail",item)
+    }
     render(){
         const {state,getfengweiList}=this.props
-        console.log(state.listData)
+        // console.log(state.listData)
         return(
             <div className="fengwei">
                 <div className="header">
@@ -25,7 +28,9 @@ class fengwei extends Component{
                         {
                             state.listData.map(item=>{
                                 return(
-                                    <li key={item.id}>
+                                    <li key={item.id} onClick={this.jump.bind(this,{
+                                        item:item
+                                    })}>
                                     <img src={item.imageUrl}/>
                                     <div className="right">
                                         <h3>{item.title}</h3>
