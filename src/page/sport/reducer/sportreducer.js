@@ -19,9 +19,9 @@ const setsportlistData=(data)=>{
         data
     }
 }
-export const getSportDataList=()=>{
+export const getSportDataList=(tagId)=>{
     return (dispatch)=>{
-        getSportList().then(res=>{
+        getSportList(tagId).then(res=>{
             console.log(res.data.data.list)
             dispatch(setsportlistData(res.data.data.list))
         })   

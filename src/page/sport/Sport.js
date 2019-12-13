@@ -7,12 +7,13 @@ import SportFooter from "../public/footer"
 const { Footer, Content } = Layout;
 export default class Sport extends Component {
     render() {
+        console.log(this.props)
         return (
             <div className="sport">
                 <Layout>
                     <Content>
                         <SportCarousel/>
-                        <SportList/>
+                        <SportList tagId={this.props.location.state.tagId}/>
                     </Content>
                     <Footer>
                         <SportFooter/>    

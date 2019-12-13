@@ -56,10 +56,10 @@ export const getClassifyNewList=()=>{
   })
 } 
 
-export const getSportList=()=>{
+export const getSportList=(tagId)=>{
   return axios("/showcase/goodsList.json",{
     params : {
-      tagId: 108072009,
+      tagId,
       page: 1,
       pageSize: 10,
       goodsIds: "",
