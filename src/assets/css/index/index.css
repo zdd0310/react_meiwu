@@ -225,6 +225,10 @@
     height: 100%;
 }
 
+.one .peishi .scrollX ul{
+    width: 5.5rem;
+}
+
 .index .footer{
     position: fixed;
     bottom: 0;

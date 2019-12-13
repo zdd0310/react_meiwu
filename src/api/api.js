@@ -17,17 +17,33 @@ export const getList=()=>{
       })
 }
 
-export const getHotList=()=>{
+export const getPeishiList=()=>{
+  return axios("/showcase/goodsList.json?goodsIds=488832511%2C426862811%2C426864459%2C316900772%2C427327270%2C488848008",{
+      params : {
+        tagId: "",
+        page: 1,
+        pageSize: 6,
+        goodsFrom: 0,
+        isAdv: 0,
+        offlineId: 0,
+        goodsNumber: 6,
+        json: 1,
+        kdt_id:17879790 
+      }
+    })
+}
+
+export const getHotList=(tagId,pageSize,goodsNumber)=>{
   return axios("/showcase/goodsList.json",{
       params : {
-        tagId: 91208886,
+        tagId,
         page: 1,
-        pageSize: 8,
+        pageSize,
         goodsIds:"", 
         goodsFrom: 1,
         isAdv: 0,
         offlineId: 0,
-        goodsNumber: 8,
+        goodsNumber,
         json: 1,
         kdt_id:17879790 
       }

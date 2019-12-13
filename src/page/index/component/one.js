@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import {Carousel,Icon} from "antd"
 import {connect} from "react-redux"
-import {getIndexList,gethotList} from "../reducer/reducer"
+import {getIndexList,gethotList,getPeishiscrList,getPeishiliList} from "../reducer/reducer"
 class One extends Component {
     componentDidMount(){
         this.props.getIndexList() 
         this.props.gethotList()  
+        this.props.getPeishiscrList()
+        this.props.getPeishiliList()
     }
     render() {
         const {state}=this.props
@@ -44,7 +46,6 @@ class One extends Component {
                                     )
                                 })
                             }
-                            
                         </ul>
                     </div>
                     
@@ -93,7 +94,7 @@ class One extends Component {
                     <div className="scrollX">
                         <ul>
                             {
-                                state.listData.map(item=>{
+                                state.peishiData.scrollData.map(item=>{
                                     return (
                                         <li key={item.id}>
                                             <dt>
@@ -113,7 +114,7 @@ class One extends Component {
                     <div className="hot">
                         <ul>
                             {
-                                state.hotData.map(item=>{
+                                state.peishiData.liData.map(item=>{
                                     return (
                                         <li key={item.id}>
                                             <dt>
@@ -146,4 +147,4 @@ const mapStateProps=(state)=>{
         state:state.IndexReducer
     }
 }
-export default connect(mapStateProps,{getIndexList,gethotList})(One)
+export default connect(mapStateProps,{getIndexList,gethotList,getPeishiscrList,getPeishiliList})(One)
