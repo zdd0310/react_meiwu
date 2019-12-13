@@ -9,6 +9,7 @@ export default class ShopcarBlank extends Component {
         return (
             <div className="blank">
                 <ShopBlank/>
+                <div className="more-title">更多精选商品</div>
                 <ShopcarMore/>
             </div>
         )

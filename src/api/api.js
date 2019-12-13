@@ -72,3 +72,18 @@ export const getSportList=()=>{
     }
   })
 }
+
+
+export const getBlankMoretList=()=>{
+  return axios("/goods-api/goodsByTagAlias.json",{
+    params : {
+      pageSize: 20,
+      page: 1,
+      offlineId: 0,
+      order: "",
+      json: 1,
+      alias: "jptgo4o71",
+      kdt_id:17879790 
+    }
+  })
+}

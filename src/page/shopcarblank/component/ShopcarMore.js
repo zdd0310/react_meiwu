@@ -1,21 +1,40 @@
 import React, { Component } from 'react'
+import {getMoreList} from "../reducer/blankmore"
+import {connect} from "react-redux"
 
-export default class ShopcarMore extends Component {
+
+class ShopcarMore extends Component {
+    componentDidMount(){
+        this.props.getMoreList()
+    }
     render() {
+        const {state}= this.props
         return (
             <ul className="blankList">
-                <li className="blank-detail">
-                    <img className="blankpic" src="https://img.yzcdn.cn/upload_files/2019/10/21/FkDkFqz7S0s-2AYAYIkfGhEYcRuL.jpg!middle.jpg"/>
-                    <div className="describe">
-                        <span className="blank-title">
-                            Ubras蚕蛹蛋白无痕保暖内衣长裤发热德绒套装女秋冬打底2019新款 UF742039
-                        </span>
-                        <div className="blank-info">
-                            <span className="blank-price">￥66</span>
-                        </div>
-                    </div>
-                </li>
+                {
+                    state.listData.map(item=>{
+                        return(
+                            <li className="blank-detail" key={item.id}>
+                                <img className="blankpic" src={item.imageUrl}/>
+                                <div className="describe">
+                                    <span className="blank-title">
+                                        {item.title}
+                                    </span>
+                                    <div className="blank-info">
+                                        <span className="blank-price">￥{item.price}</span>
+                                    </div>
+                                </div>
+                            </li>
+                        )
+                    })
+                }
             </ul>
         )
     }
 }
+const mapStateProps=(state)=>{
+    return{
+        state:state.BlankMoreReducer
+    }
+}
+export default connect (mapStateProps,{getMoreList})(ShopcarMore)
