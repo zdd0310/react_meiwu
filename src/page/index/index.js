@@ -3,6 +3,7 @@ import { Icon, Menu } from "antd"
 import {Route,Switch,Redirect} from "react-router-dom"
 import "../../assets/css/index/index.css"
 import {indexRoutes} from "../../router/routes"
+import Footer from "../public/footer"
 
 
 
@@ -70,6 +71,7 @@ export default class Index extends Component {
                     </Switch>
                     
                 </div>
+                <Footer />
             </div>
         )
     }
