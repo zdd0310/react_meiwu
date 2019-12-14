@@ -47,6 +47,7 @@ export const getPeishiList=()=>{
     }
   })
 }
+// 分类页/选项卡/必买推荐
 export const getClassifyMustList=()=>{
   return axios("/goods-api/goodsByTagAlias.json",{
     params:{
@@ -72,7 +73,7 @@ export const getFengweiList=(alias)=>{
     }
   })
 }
-
+// 分类页/选项卡/本周新品
 export const getClassifyNewList=()=>{
   return axios("/goods-api/goodsByTagAlias.json",{
     params:{
@@ -85,7 +86,7 @@ export const getClassifyNewList=()=>{
     }
   })
 } 
-
+// 户外运动
 export const getSportList=(tagId)=>{
   return axios("/showcase/goodsList.json",{
     params : {
@@ -103,7 +104,7 @@ export const getSportList=(tagId)=>{
   })
 }
 
-
+// 更多商品
 export const getBlankMoretList=()=>{
   return axios("/goods-api/goodsByTagAlias.json",{
     params : {
