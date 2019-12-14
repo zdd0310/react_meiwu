@@ -63,6 +63,8 @@
     height:.44rem;
     color:#FF4444;
     font-size:.16rem;
+    background:white;
+    display:block;
 }
 .content ul li .right .cart p{
     display:inline-block;
@@ -79,4 +81,9 @@
     border:.01rem solid #FF4444;
     border-radius:50%;
     color:#FF4444;
+    display:inline-block;
+    width:.24rem;
+    height:.24rem;
+    text-align:center;
+    line-height:.24rem;
 }
