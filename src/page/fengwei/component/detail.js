@@ -6,9 +6,19 @@ class detail extends Component {
     componentDidMount(){
         // console.log(this.props.location.state.item)
     }
+    add=(item)=>{
+        const cart= localStorage.getItem("cart")
+        let newarr=[]
+        if(cart){
+            newarr=JSON.parse(cart)
+        } 
+        newarr.push(item)
+    //    console.log(newarr)
+       localStorage.setItem("cart",JSON.stringify(newarr))
+    }
     render() {
         const item=this.props.location.state.item
-        console.log(item)
+        // console.log(item)
         return (
             <div className="detail">
                 <div className="content">
@@ -54,7 +64,7 @@ class detail extends Component {
                 <Jiao />
                 </div>
                 <div className="footer">
-                    <button>立即抢购</button>
+                    <button onClick={this.add.bind(this,item)}>加入购物车</button>
                 </div>
             </div>
         )

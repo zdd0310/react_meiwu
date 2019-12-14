@@ -12,6 +12,7 @@ class fengwei extends Component{
     jump=(item)=>{
         this.props.history.push("/detail",item)
     }
+    
     render(){
         const {state,getfengweiList}=this.props
         // console.log(state.listData)
