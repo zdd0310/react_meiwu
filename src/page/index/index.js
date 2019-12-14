@@ -4,22 +4,29 @@ import {Route,Switch,Redirect} from "react-router-dom"
 import "../../assets/css/index/index.css"
 import {indexRoutes} from "../../router/routes"
 import Footer from "../public/footer"
-
+import Jiao from "../fengwei/component/jiao"
 
 
 
 export default class Index extends Component {
     state = {
-        current: '',
+        current: 'one',
     };
     shuaxin(){
-        const reg=/^\/index\/(.{1,})$/g;
+        const reg=/^\/index\/(.{0,})$/g;
         const key1 =reg.exec(this.props.location.pathname)
-        const ke=key1[1]
-        console.log(ke)
-        this.setState({
-            current: ke,
-        });
+        if(this.props.location.pathname=="/index"||this.props.location.pathname=="/index/"){
+            this.setState({
+                current: "one",
+            });
+        }else{
+            const ke=key1[1]
+            this.setState({
+                current: ke,
+            });
+        }
+        
+        
     }
     handleClick = (e) => {
         const reg2=/^([a-z]{1,})([0-9]{0,})$/g;
@@ -87,6 +94,7 @@ export default class Index extends Component {
                     </Switch>
                     
                 </div>
+                <Jiao />
                 <Footer />
             </div>
         )
