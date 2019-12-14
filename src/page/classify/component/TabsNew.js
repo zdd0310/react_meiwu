@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 import {getNewList} from "../reducer/newreducer"
 import {connect} from "react-redux"
+import {withRouter} from "react-router-dom"
 
 class TabsNew extends Component {
     componentDidMount(){
         this.props.getNewList()
+    }
+    clickToDetail=(item)=>{
+        this.props.history.push("/detail",{
+            item
+        })
     }
     render() {
         const {state}=this.props
@@ -14,7 +20,7 @@ class TabsNew extends Component {
                 {
                     state.listData.map(item=>{
                         return(
-                            <li className="goods" key={item.id}>
+                            <li className="goods" onClick={this.clickToDetail.bind(this,item)} key={item.id}>
                                 <img className="pic" src={item.imageUrl} />
                                 <div className="txt">
                                     <span className="title">
@@ -41,4 +47,4 @@ const mapStateProps=(state)=>{
         state:state.NewReducer
     }
 }
-export default connect(mapStateProps,{getNewList})(TabsNew)
+export default connect(mapStateProps,{getNewList})(withRouter(TabsNew))
