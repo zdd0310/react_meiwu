@@ -2,6 +2,9 @@ import React, { Component } from "react"
 import "../../assets/css/fengwei/cart.css"
 import {Icon,Checkbox } from "antd"
 class cart extends Component {
+    componentDidMount(){
+        console.log(this.btn)
+    }
     render(){
         let car=localStorage.getItem("cart")
         if(car){
@@ -35,7 +38,7 @@ class cart extends Component {
                                     <div className="right">
                                         <p>{item.title}</p>
                                         <p>{item.subTitle}</p>
-                                        <span>￥</span><span>{item.price}</span><span><button>-</button><button>1</button><button>+</button></span>
+                                        <span>￥</span><span>{item.price}</span><span><button>-</button><button ref={(btn)=>this.btn=btn}>1</button><button>+</button></span>
                                     </div>
                                 </div>
                             </div>)
@@ -56,6 +59,7 @@ class cart extends Component {
               </div>
             </div>
         )
+        
     }
 }
 export default cart
