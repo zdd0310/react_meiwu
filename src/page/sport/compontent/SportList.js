@@ -2,11 +2,17 @@ import React, { Component } from 'react'
 import { Icon } from 'antd';
 import {getSportDataList} from "../reducer/sportreducer"
 import {connect} from "react-redux"
+import {withRouter} from "react-router-dom"
 
 
 class SportList extends Component {
     componentDidMount(){
         this.props.getSportDataList(this.props.tagId)
+    }
+    clickToDetail=(item)=>{
+        this.props.history.push("/detail",{
+            item
+        })
     }
     render() {
         // console.log(this.props)
@@ -16,7 +22,7 @@ class SportList extends Component {
                 {
                     state.listData.map(item=>{
                         return (
-                            <li className="sport-detail" key={item.id}>
+                            <li className="sport-detail" onClick={this.clickToDetail.bind(this,item)} key={item.id}>
                                 <img className="sportpic" src={item.imageUrl}/>
                                 <div className="newtag">新品</div>
                                 <div className="describe">
@@ -41,4 +47,4 @@ const mapStateProps=(state)=>{
         state:state.SportReducer
     }
 }
-export default connect(mapStateProps,{getSportDataList})(SportList)
+export default connect(mapStateProps,{getSportDataList})(withRouter(SportList))
