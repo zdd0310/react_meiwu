@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 100%;
+    padding-bottom: 0.5rem;
 
 }
 .index .search{
@@ -34,7 +35,6 @@
   }
 .index .indexContent{
     width: 100%;
-    padding-bottom: 0.5rem;
 
 }
   .one .new{
