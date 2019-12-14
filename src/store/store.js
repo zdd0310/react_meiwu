@@ -6,13 +6,14 @@ import MustReducer from "../page/classify/reducer/mustreducer"
 import NewReducer from "../page/classify/reducer/newreducer"
 import FengweiReducer from "../page/fengwei/reducer/reducer"
 import SportReducer from "../page/sport/reducer/sportreducer"
+import BlankMoreReducer from "../page/shopcarblank/reducer/blankmore"
 const reducers=combineReducers({
     IndexReducer,
     MustReducer,
     NewReducer,
     FengweiReducer,
-    SportReducer
-
+    SportReducer,
+    BlankMoreReducer
 })
 let store=createStore(reducers,applyMiddleware(thunk))
 export default store

@@ -6,9 +6,10 @@ import {connect} from "react-redux"
 
 class SportList extends Component {
     componentDidMount(){
-        this.props.getSportDataList()
+        this.props.getSportDataList(this.props.tagId)
     }
     render() {
+        // console.log(this.props)
         const {state}=this.props
         return (
             <ul className="sportList">
